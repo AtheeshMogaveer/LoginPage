@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: url(bg.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+      }
+      .container {
+        width: 50%;
+        height: 65%;
+        background-color: #d9cece6f;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        align-items: center;
+      }
+      .inputfields {
+        display: flex;
+        height: 20%;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 80%;
+      }
+      .login {
+        font-size: 5rem;
+      }
+      .user {
+        padding: 20px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: "Libre Franklin", sans-serif;
+      }
+      .saveForget {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+      }
+      .save {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        color: black;
+      }
+      .forget {
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        color: black;
+      }
+      #login {
+        width: 15%;
+        border: none;
+        outline: none;
+        background: linear-gradient(40deg, rgba(255, 248, 192, 0.615), pink);
+        border-radius: 10px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="loginbox"> -->
+      <h1 class="login">Login</h1>
+      <div class="inputfields">
+        <input
+          class="user"
+          type="text"
+          id="input-1"
+          placeholder="Enter your email"
+        />
+        <input
+          class="user"
+          type="password"
+          id="input-2"
+          placeholder="Type your password"
+        />
+      </div>
+      <div class="saveForget">
+        <div class="savecheck">
+          <input type="checkbox" name="save" id="save" />
+          <label class="save" for="save">Remember me</label>
+        </div>
+        <a href="#" class="forget">Forget password ?</a>
+      </div>
+      <button id="login">Log In</button>
+      <!-- </div> -->
+    </div>
+  </body>
+</html>
