@@ -104,5 +104,14 @@
       <button id="login">Log In</button>
       <!-- </div> -->
     </div>
+    <script>
+      let btn=document.getElementById("login");
+      let user=document.getElementById("input-1");
+      let pass=document.getElementById("input-2");
+      btn.onclick=function(){
+        user.value="";
+        pass.value="";
+      }
+    </script>
   </body>
 </html>
